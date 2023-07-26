@@ -1,0 +1,25 @@
+{
+    "ResourceTypeFilters": [
+        "AWS::S3::Bucket"
+    ],
+    "TagFilters": [
+        {
+            "Key": "env",
+            "Values": [
+                "dev"
+            ]
+        },
+        {
+            "Key": "product",
+            "Values": [
+                "lambda"
+            ]
+        },
+        {
+            "Key": "terraform",
+            "Values": [
+                "true"
+            ]
+        }
+    ]
+}
