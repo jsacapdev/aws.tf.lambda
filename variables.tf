@@ -21,8 +21,8 @@ variable "default_tags" {
   description = "Tags to apply"
   type        = map(string)
   default = {
-    env = "dev"
-    product = "lambda"
+    env       = "dev"
+    product   = "lambda"
     terraform = "true"
   }
 }
