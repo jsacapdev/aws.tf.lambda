@@ -23,6 +23,5 @@ variable "default_tags" {
   default = {
     env       = "dev"
     product   = "lambda"
-    terraform = "true"
   }
 }

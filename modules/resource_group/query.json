@@ -14,12 +14,6 @@
             "Values": [
                 "lambda"
             ]
-        },
-        {
-            "Key": "terraform",
-            "Values": [
-                "true"
-            ]
         }
     ]
 }
