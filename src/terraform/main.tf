@@ -6,6 +6,8 @@ provider "aws" {
   }
 }
 
+provider "archive" {}
+
 module "resource_group" {
   source = "./modules/resource_group"
 

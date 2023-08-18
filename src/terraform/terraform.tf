@@ -5,8 +5,6 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 5.9.0"
     }
-
-    archive {}
   }
 
   backend "s3" {
