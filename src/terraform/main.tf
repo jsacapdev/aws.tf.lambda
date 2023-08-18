@@ -19,3 +19,7 @@ module "s3_bucket" {
 
   s3_bucket_name = var.lambda_s3_bucket
 }
+
+module "lambda" {
+  source = "./modules/lambda"
+}
