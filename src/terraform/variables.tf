@@ -17,7 +17,11 @@ variable "lambda_s3_bucket_name" {
   default = "s3-gp-dev"
 }
 
+variable "lambda_aws_iam_role_name" {
 
+  type    = string
+  default = "iam-role-lambda-trigger-gp-dev"
+}
 
 variable "default_tags" {
   description = "Tags to apply"

@@ -15,3 +15,8 @@ data "aws_iam_policy_document" "AWSLambdaTrustPolicy" {
     }
   }
 }
+
+resource "aws_iam_role" "iam_role" {
+  assume_role_policy = data.aws_iam_policy_document.AWSLambdaTrustPolicy.json
+  name               = var.lambda_aws_iam_role_name
+}
