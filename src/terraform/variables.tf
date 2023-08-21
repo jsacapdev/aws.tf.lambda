@@ -8,13 +8,13 @@ variable "aws_region" {
 variable "lamdba_resource_group_name" {
 
   type    = string
-  default = "rg-lambda-dev"
+  default = "rg-gp-dev"
 }
 
 variable "lambda_s3_bucket" {
 
   type    = string
-  default = "s3-lamdba-dev"
+  default = "s3-gp-dev"
 }
 
 variable "default_tags" {
