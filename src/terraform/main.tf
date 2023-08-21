@@ -17,7 +17,7 @@ module "resource_group" {
 module "s3_bucket" {
   source = "./modules/s3_bucket"
 
-  s3_bucket_name = var.lambda_s3_bucket
+  s3_bucket_name = var.lambda_s3_bucket_name
 }
 
 module "lambda" {

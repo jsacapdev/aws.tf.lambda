@@ -11,11 +11,13 @@ variable "lamdba_resource_group_name" {
   default = "rg-gp-dev"
 }
 
-variable "lambda_s3_bucket" {
+variable "lambda_s3_bucket_name" {
 
   type    = string
   default = "s3-gp-dev"
 }
+
+
 
 variable "default_tags" {
   description = "Tags to apply"
