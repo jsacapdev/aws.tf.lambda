@@ -27,6 +27,9 @@ resource "aws_iam_role_policy_attachment" "iam_role_policy_attachment_lambda_bas
 }
 
 resource "aws_lambda_function" "lambda_function" {
+  tags = {
+    Name = var.lambda_function_name
+  }
   code_signing_config_arn = ""
   description             = ""
   filename                = data.archive_file.lambda.output_path
