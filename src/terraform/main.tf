@@ -24,4 +24,5 @@ module "lambda" {
   source = "./modules/lambda"
 
   lambda_aws_iam_role_name = var.lambda_aws_iam_role_name
+  lambda_function_name     = var.lambda_function_name
 }

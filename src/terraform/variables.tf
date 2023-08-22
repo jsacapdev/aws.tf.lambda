@@ -23,6 +23,12 @@ variable "lambda_aws_iam_role_name" {
   default = "iam-role-lambda-trigger-gp-dev"
 }
 
+variable "lambda_function_name" {
+
+  type    = string
+  default = "s3-lambda-dev"
+}
+
 variable "default_tags" {
   description = "Tags to apply"
   type        = map(string)

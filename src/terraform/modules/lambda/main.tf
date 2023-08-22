@@ -26,3 +26,13 @@ resource "aws_iam_role_policy_attachment" "iam_role_policy_attachment_lambda_bas
   policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
 }
 
+resource "aws_lambda_function" "lambda_function" {
+  code_signing_config_arn = ""
+  description             = ""
+  filename                = data.archive_file.lambda.output_path
+  function_name           = var.lambda_function_name
+  role                    = aws_iam_role.iam_role.arn
+  handler                 = "index.handler"
+  runtime                 = "nodejs14.x"
+  source_code_hash        = filebase64sha256(data.archive_file.lambda.output_path)
+}
