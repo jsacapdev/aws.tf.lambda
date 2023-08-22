@@ -1,7 +1,8 @@
 {
     "ResourceTypeFilters": [
         "AWS::S3::Bucket",
-        "AWS::Lambda::Function"        
+        "AWS::Lambda::Function",
+        "AWS::EC2::VPC"        
     ],
     "TagFilters": [
         {
