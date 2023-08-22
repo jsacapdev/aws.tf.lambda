@@ -26,3 +26,10 @@ module "lambda" {
   lambda_aws_iam_role_name = var.lambda_aws_iam_role_name
   lambda_function_name     = var.lambda_function_name
 }
+
+module "network" {
+  source = "./modules/network"
+
+  vpc_cidr_block = var.vpc_cidr_block
+  vpc_name       = var.vpc_name
+}

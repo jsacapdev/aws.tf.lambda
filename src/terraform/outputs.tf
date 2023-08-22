@@ -12,3 +12,8 @@ output "lambda_arn" {
   description = "ARN of the lambda"
   value       = module.lambda.arn
 }
+
+output "vpc_arn" {
+  description = "ARN of the vpc"
+  value       = module.network.arn
+}
