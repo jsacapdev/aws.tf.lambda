@@ -23,3 +23,8 @@ variable "vpc_internet_gateway_name" {
   description = "VPC Internet Gateway Name"
 }
 
+variable "vpc_internet_gateway_public_route_table_name" {
+  type        = string
+  description = "VPC Internet Gateway Route Tablem Name"
+}
+
