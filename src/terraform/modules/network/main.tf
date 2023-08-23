@@ -13,3 +13,13 @@ resource "aws_subnet" "subnet_public" {
     Name = var.public_subnet_name
   }
 }
+
+resource "aws_internet_gateway" "internet_gateway" {
+  vpc_id = aws_vpc.vpc.id
+
+  tags = {
+    Name = var.vpc_internet_gateway_name
+  }
+}
+
+

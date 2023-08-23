@@ -7,6 +7,7 @@ vpc_name                   = "vpc-gp-dev"
 vpc_cidr_block             = "10.0.0.0/16"
 public_subnet_name         = "public_snet-gp-dev"
 public_subnet_cidr_block   = "10.0.0.0/21"
+vpc_internet_gateway_name  = "vpc-ig-gp-dev"
 
 default_tags = {
   env     = "dev"

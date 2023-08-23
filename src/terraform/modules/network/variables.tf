@@ -18,3 +18,8 @@ variable "public_subnet_cidr_block" {
   description = "Public subnet CIDR"
 }
 
+variable "vpc_internet_gateway_name" {
+  type        = string
+  description = "VPC Internet Gateway Name"
+}
+

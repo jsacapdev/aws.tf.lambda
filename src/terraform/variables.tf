@@ -35,6 +35,10 @@ variable "public_subnet_cidr_block" {
   type = string
 }
 
+variable "vpc_internet_gateway_name" {
+  type = string
+}
+
 variable "default_tags" {
   description = "Tags to apply"
   type        = map(string)
