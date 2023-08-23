@@ -30,6 +30,8 @@ module "lambda" {
 module "network" {
   source = "./modules/network"
 
-  vpc_cidr_block = var.vpc_cidr_block
-  vpc_name       = var.vpc_name
+  vpc_name                 = var.vpc_name
+  vpc_cidr_block           = var.vpc_cidr_block
+  public_subnet_name       = var.public_subnet_name
+  public_subnet_cidr_block = var.public_subnet_cidr_block
 }
